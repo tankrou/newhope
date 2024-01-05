@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <title>contact us</title>
+
+    <style>
+        /* Add some styling for demonstration purposes */
+        .col-img {
+          position: relative;
+          padding: 0;
+        }
+    
+        .col-img img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; /* Adjust this value based on your preference */
+          margin: 0;
+        }
+    
+        .form-overlay {
+          position: absolute;
+          top: 150%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2; /* Place the form above the image */
+
+          padding: 20px;
+
+          
+          max-width: 80%; /* Limit the width of the form */
+        }
+      </style>
+</head>
+ <body>
+  <nav class="navbar navbar-expand-lg bg-white-lg">
+    <a class="navbar-brand" href="#"><img src="website_photo/img_logo.png"  
+            style="height: 100px ;" alt="logo"></a>
+    <div class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </div>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    About Us
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html.html"> Our Story</a></li>
+                    <li><a class="dropdown-item" href="our-team.html">Our Team</a></li>
+                    <li><a class="dropdown-item" href="programme.html">Programme</a></li>
+                </ul>
+            </li>
+
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    What We Do
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="education.html">Education</a></li>
+                    <li><a class="dropdown-item" href="co-curriculum.html">Co-curriculum</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Get Involved
+                </a>
+                <ul class="dropdown-menu">
+
+                    <li><a class="dropdown-item" href="donation.html">Donation</a></li>
+                    <li><a class="dropdown-item" href="volunteer.html">Volunteer</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="donation.html" class=" nav-link bg-lightyellow" style="color: red;border-radius: 20px;">Donate</a>
+          </li>
+
+            <!-- Add other navigation items as needed -->
+
+        </ul>
+    </div>
+</nav>
+
+<!-- Offcanvas container -->
+<div class="offcanvas offcanvas-start bg-white" tabindex="-1" id="offcanvasNavbar"
+    aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">New Hope</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+
+        <!-- Your existing navigation code here -->
+
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    About Us
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html.html">Our Story</a></li>
+                    <li><a class="dropdown-item" href="our-team.html">Our Team</a></li>
+                    <li><a class="dropdown-item" href="programme.html">Programme</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    What We Do
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="education.html">Education</a></li>
+                    <li><a class="dropdown-item" href="co-curriculum.html">Co-curriculum</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Get Involved
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="donation.html">Donation</a></li>
+                    <li><a class="dropdown-item" href="volunteer.html">Volunteer</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="donation.html">Donate</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+      <!-- title -->
+<div class="container-fluid bg-darkblue">
+   
+        <div class="col " >
+            <img src="website_photo/titles/contactus.png" class="img-fluid" alt="title">
+        </div>
+   
+
+<!-- content -->
+
+    <div class="col">
+        <h3 class="text-center" style="color: lightblue"> We’d love to hear from you! Please complete the form below:</h3>
+    </div>
+
+<!-- <div class="row">
+    <img src="form.png" class=" img-fluid align-items-center" style="left: 20%; width: 95%;" alt="form">
+</div>
+
+
+<div class="bg-img">
+    <h3 style="padding-top: 300px;">HAHAHDKDHADYAUIEAIGDUGDUDYUWGGFUFGUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU</h3>
+
+
+  </div> -->
+
+
+
+
+    <div class="container-box bg-yellow pb-5" >
+        <h2 class="text-center" style="color:#4B88FF;-webkit-text-stroke: 3px  black;padding:5%;">FORM</h2>
+          <form>
+            <div class="row pb-3">
+                <div class="col-6 pb-4" style="padding-left: 10%;">
+                    <h3>First Name</h3>
+                    <input class="form-control bg-lightblue form-control:hover form-control:active form-control:focus" type="text"
+                        placeholder="Enter your First Name" aria-label="default input example">
+                </div>
+
+                <div class="col-6 pb-4" style="padding-right: 10%;">
+                    <h3>Last Name</h3>
+                    <input class="form-control bg-lightblue form-control:hover form-control:active form-control:focus" type="text"
+                        placeholder="Enter your Last Name" aria-label="default input example">
+                </div>
+            </div>
+
+
+
+            <div class="mb-3 pb-4" style="padding-left: 9%;padding-right: 9%;">
+                <h3>Email Address</h3>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your Email Address">
+            </div>
+
+
+
+
+
+
+            <div class="mb-3 " style="padding-left: 9%;padding-right: 9%;">
+              <h3>Write a Message</h3>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="6">
+
+              </textarea>
+            </div>
+
+          
+          
+          <div class="text-end" style="padding-right: 10%;padding-top: 10%;"> 
+            <button type="submit" class="btn btn-donate border-2 rounded-pill send"><h3>SEND</h3></button>
+        </div>
+    </form>
+   </div>
+
+
+
+   <div class="row pt-5 justify-content-center text-center align-items-center">
+    <div class="col-6 ">
+        <div class="row">
+            <div class="col-4 "><a href="https://www.facebook.com/ChildrenTrainingCentre?mibextid=ZbWKwL" ><i class="bi bi-facebook icon-size" style="color: white;" ></i></a>
+            </div>
+            <div class="col-4"><a href="https://wa.me/182854879" ><i class="bi bi-whatsapp icon-size" style="color: white;"></i></a>
+            </div>
+            <div class="col-4"><a href="https://www.instagram.com/childrentrainingcentre08/?igshid=YmMyMTA2M2Y%3D" ><i class="bi bi-instagram icon-size" style="color: white;"></i></a>
+            </div>
+        </div>
+    </div>
+   </div>
+    <div class="row">
+        <img src="website_photo/contact.png" alt="vector" class="img-fluid pb-5" style="max-width: 100%; height: auto;">
+    </div>
+
+    <div class="row">
+        <h2 class="text-center" style="color:#FFE500;-webkit-text-stroke: 3px  black;padding:5%;">LOCATION</h2>
+        <div class="col">
+            <h3 class="text-center" style="color: lightblue"> 28-1&2, 30-1&2, Jalan Prima Setapak 1,off Jalan Genting Klang, Setapak, 53300 Kuala Lumpur</h3>
+        </div>
+
+    </div>
+
+    <!--Google map-->
+    <!-- <div class="row pb-5 py-5"> -->
+        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 100%; ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.6058306646214!2d101.71049460998263!3d3.197792496763994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc38042e8a11f7%3A0x330c1fbb191224ff!2sChildren&#39;s%20Training%20Center%20(CTC)!5e0!3m2!1sen!2smy!4v1704286950698!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+  <!-- </div> -->
+  <!--Google Maps-->
+
+
+
+
+
+</div>
+    
+<!-- FOOTER -->
+<div class="container">
+    <footer class="row div-size-height py-5 my-5 border-top">
+
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <a href="#" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <img src="website_photo/img_logo.png" class="img-fluid" alt="logo">
+            </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 mb-4 whenMobileGone">
+            <div class="my-0 py-0">
+                <h3>Address:</h3>
+                <h3>28-1&2, 30-1&2, Jalan Prima Setapak 1,off Jalan Genting Klang, Setapak, 53300 Kuala Lumpur</h3>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 mb-4 whenDesktopGone">
+            <div class="my-0 py-0">
+                <h3 class="text-center my-auto">Address:</h3>
+                <h3 class="text-center my-auto">28-1&2, 30-1&2, Jalan Prima Setapak 1,off Jalan Genting Klang, Setapak, 53300 Kuala Lumpur</h3>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 mb-4  whenMobileGone">
+            <h3>Contact:</h3>
+            <h3>WhatsApp: 018-285 4879</h3>
+            <h3>Email: <a href="#" style="text-decoration: none; color: black;">nhsetapak@gmail.com</a></h3>
+
+            <div class="row mt-3">
+                <div class="col-4"><a href="https://www.facebook.com/ChildrenTrainingCentre?mibextid=ZbWKwL"><i class="bi bi-facebook icon-size"></i></a></div>
+                <div class="col-4"><a href="https://wa.me/182854879"><i class="bi bi-whatsapp icon-size"></i></a></div>
+                <div class="col-4"><a href="https://www.instagram.com/childrentrainingcentre08/?igshid=YmMyMTA2M2Y%3D"><i class="bi bi-instagram icon-size"></i></a></div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4 whenDesktopGone">
+            <h3 class="text-center my-auto">Contact:</h3>
+            <h3 class="text-center my-auto">WhatsApp: 018-285 4879</h3>
+            <h3 class="text-center my-auto">Email: <a href="#">nhsetapak@gmail.com</a></h3>
+
+            <div class="row mt-3">
+                <div class="col-4" style="padding-left: 100px;"><a href="https://www.facebook.com/ChildrenTrainingCentre?mibextid=ZbWKwL"><i class="bi bi-facebook icon-size"></i></a></div>
+                <div class="col-4 text-center"><a href="https://wa.me/182854879"><i class="bi bi-whatsapp icon-size"></i></a></div>
+                <div class="col-4"><a href="https://www.instagram.com/childrentrainingcentre08/?igshid=YmMyMTA2M2Y%3D"><i class="bi bi-instagram icon-size"></i></a></div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 mb-4 whenMobileGone">
+            <h3>Support Our Work:</h3>
+            <h3>Help us to empower these children for a life beyond the classroom.</h3>
+            <button type="button" class="btn btn-donate border-2 rounded-pill mt-3"><a href="donation.html"><h3 style="color: black;text-decoration: none;">Donate Now</h3></button></a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 mb-4 whenDesktopGone">
+            <h3 class="text-center my-auto">Support Our Work:</h3>
+            <h3 class="text-center my-auto">Help us to empower these children for a life beyond the classroom.</h3>
+            <button type="button" class="btn btn-donate border-2 rounded-pill mt-3"style="margin-left: 35%;"style="margin-left: 35%;"><a href="donation.html"  ><h3 >Donate Now</h3></button></a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="col-12 text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Copyright:
+            <a class="text-body" href="#">New Hope</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</div><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
