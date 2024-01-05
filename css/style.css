@@ -452,7 +452,7 @@ body{
   display: none;
 }
 
-@media (min-width:576px){
+@media (min-width:400px){
   .whenMobileGone {
       display: none;
   }
